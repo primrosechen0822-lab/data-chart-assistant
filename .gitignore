@@ -138,6 +138,9 @@ celerybeat.pid
 *.aof
 *.pid
 
+# macOS Finder metadata
+.DS_Store
+
 # RabbitMQ
 mnesia/
 rabbitmq/
