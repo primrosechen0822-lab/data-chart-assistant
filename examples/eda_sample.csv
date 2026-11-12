@@ -1,0 +1,61 @@
+customer_id,signup_date,region,segment,channel,age,monthly_spend,orders_12m,satisfaction,postal_code
+C0001,2025-01-05,West,Consumer,Web,29,84.50,3,4.2,94103
+C0002,2025-01-11,South,Small Business,Partner,41,210.00,7,4.5,30303
+C0003,2025-01-18,East,Consumer,Store,35,62.75,2,3.8,10001
+C0004,2025-01-24,Midwest,Enterprise,Partner,52,640.00,18,4.7,60601
+C0005,2025-02-02,West,Small Business,Web,38,195.25,6,4.1,97201
+C0006,2025-02-08,South,Consumer,Store,24,48.00,2,3.6,75201
+C0007,2025-02-15,East,Enterprise,Partner,47,520.50,15,4.8,02108
+C0008,2025-02-21,Midwest,Consumer,Web,31,96.00,4,4.0,55401
+C0009,2025-03-01,West,Consumer,Store,44,132.75,5,4.4,98101
+C0010,2025-03-07,South,Small Business,Web,36,245.00,8,4.3,78701
+C0011,2025-03-14,East,Consumer,Partner,27,73.25,3,3.9,10011
+C0012,2025-03-20,Midwest,Enterprise,Partner,58,710.00,21,4.9,48201
+C0013,2025-03-28,West,Small Business,Store,33,188.50,6,4.0,94110
+C0014,2025-04-04,South,Consumer,Web,49,115.00,4,3.7,30318
+C0015,2025-04-10,East,Enterprise,Partner,45,590.00,17,4.6,10016
+C0016,2025-04-17,Midwest,Consumer,Store,22,55.25,2,4.1,60614
+C0017,2025-04-23,West,Consumer,Web,39,143.00,5,4.5,97205
+C0018,2025-05-01,South,Small Business,Partner,54,,10,4.4,75204
+C0019,2025-05-08,East,Consumer,Store,30,68.00,3,3.5,02116
+C0020,2025-05-15,Midwest,Enterprise,Web,61,680.00,20,4.8,55403
+C0021,2025-05-22,West,Small Business,Web,42,224.50,7,4.2,98109
+C0022,2025-05-29,South,Consumer,Partner,26,91.25,4,4.0,78704
+C0023,2025-06-05,East,Enterprise,Partner,50,615.00,19,4.7,10003
+C0024,2025-06-12,Midwest,Consumer,Store,34,72.50,3,3.8,48226
+C0025,2025-06-19,West,Consumer,Web,28,58.00,2,3.9,94107
+C0026,2025-06-26,South,Small Business,Store,46,275.00,9,4.6,30309
+C0027,2025-07-03,East,Consumer,Web,37,105.75,4,4.1,10009
+C0028,2025-07-10,Midwest,Enterprise,Partner,55,735.00,22,4.9,60611
+C0029,2025-07-17,West,Small Business,Partner,32,180.00,6,3.7,97209
+C0030,2025-07-24,South,Consumer,Store,43,122.25,5,4.3,75202
+C0031,2025-08-01,East,Enterprise,Web,48,560.00,16,4.8,02110
+C0032,2025-08-08,Midwest,Consumer,Web,25,64.50,2,3.6,55408
+C0033,2025-08-15,West,Consumer,Store,57,152.00,5,4.2,98104
+C0034,2025-08-22,South,Small Business,Partner,40,298.50,9,4.5,78702
+C0035,2025-08-29,East,Consumer,Web,33,79.00,3,4.0,10019
+C0036,2025-09-05,Midwest,Enterprise,Partner,63,820.00,24,4.7,48202
+C0037,2025-09-12,West,Small Business,Web,45,205.00,7,4.1,94114
+C0038,2025-09-19,South,Consumer,Store,29,51.25,2,3.8,30324
+C0039,2025-09-26,East,Enterprise,Partner,53,645.50,18,4.9,10024
+C0040,2025-10-03,Midwest,Consumer,Web,38,99.00,4,4.2,60622
+C0041,2025-10-10,West,Consumer,Web,23,46.75,1,,97214
+C0042,2025-10-17,South,Small Business,Store,51,310.00,11,4.6,75205
+C0043,2025-10-24,East,Consumer,Partner,36,86.50,3,4.1,02139
+C0044,2025-10-31,Midwest,Enterprise,Partner,59,760.00,23,4.8,55416
+C0045,2025-11-07,West,Small Business,Web,34,190.00,6,3.9,98115
+C0046,2025-11-14,South,Consumer,Store,47,128.75,5,4.4,78745
+C0047,2025-11-21,East,Enterprise,Partner,56,605.00,17,4.7,10027
+C0048,2025-11-28,Midwest,Consumer,Web,28,61.00,2,3.5,48204
+C0049,2025-12-05,West,Consumer,Store,40,139.50,5,4.3,94122
+C0050,2025-12-12,South,Small Business,Partner,31,232.00,8,4.2,30328
+C0051,2025-12-19,East,Consumer,Web,44,74.00,3,4.0,10028
+C0052,2025-12-26,Midwest,Enterprise,Partner,62,790.00,25,4.9,60657
+C0053,2026-01-02,West,Small Business,Web,37,215.25,7,4.4,97215
+C0054,2026-01-09,South,Consumer,Store,26,57.50,2,3.8,75206
+C0055,2026-01-16,East,Enterprise,Partner,49,575.00,16,4.6,02140
+C0056,2026-01-23,Midwest,Consumer,Web,35,93.75,4,4.1,55419
+C0057,2026-01-30,West,Consumer,Partner,53,160.00,6,4.5,94131
+C0058,2026-02-06,South,Small Business,Web,39,286.50,10,4.3,30342
+C0059,2026-02-13,East,Consumer,Store,32,70.00,3,3.9,10030
+C0060,2026-02-20,Midwest,Enterprise,Partner,57,845.00,26,4.8,60640
