@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 from typing import Sequence
 
+from data_chart_assistant.eda import profile_dataset, write_eda_report
 from data_chart_assistant.processing import (
     CHART_TYPES,
     clean_dataset,
@@ -41,6 +42,13 @@ def build_parser() -> argparse.ArgumentParser:
     plot.add_argument("--type", choices=sorted(CHART_TYPES), default="heatmap")
     plot.add_argument("-o", "--output", help="Output image path; defaults to <name>_chart.png.")
     plot.add_argument("--summary", help="Optional path for a JSON statistical summary.")
+
+    eda = commands.add_parser("eda", help="Profile a dataset and optionally create an interactive HTML report.")
+    eda.add_argument("file", help="Input CSV, XLS, or XLSX path.")
+    eda.add_argument("-o", "--output", help="HTML report path; defaults to <name>_eda_report.html.")
+    eda.add_argument("--plan-only", action="store_true", help="Print aggregate profile and recommendations without creating a report.")
+    eda.add_argument("--max-categories", type=int, default=12, help="Maximum categories shown per categorical chart.")
+    eda.add_argument("--time-frequency", choices=["day", "week", "month", "quarter", "year"], default="month", help="Aggregation period for date-based row counts.")
     return parser
 
 
@@ -50,6 +58,24 @@ def main(argv: Sequence[str] | None = None) -> int:
     source = Path(args.file).expanduser()
 
     try:
+        if args.command == "eda":
+            data = load_dataset(source)
+            profile = profile_dataset(
+                data,
+                max_categories=args.max_categories,
+                time_frequency=args.time_frequency,
+            )
+            if not args.plan_only:
+                report_path = write_eda_report(
+                    data,
+                    profile,
+                    args.output or source.with_name(f"{source.stem}_eda_report.html"),
+                    max_categories=args.max_categories,
+                )
+                print(f"EDA report: {report_path}", file=sys.stderr)
+            print(json.dumps(profile, indent=2, ensure_ascii=False, default=str))
+            return 0
+
         data = clean_dataset(load_dataset(source))
         if args.command == "clean":
             output_path = save_dataset(data, args.output or _default_clean_path(source))
